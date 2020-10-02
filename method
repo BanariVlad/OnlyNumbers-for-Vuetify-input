@@ -1,0 +1,7 @@
+onlyNumbers(e) {
+      let expectedValue = e.target.value + e.key;
+      if (!/^[0-9]*\.?[0-9]*$/.test(expectedValue)) {
+        return e.preventDefault();
+      }
+      return true;
+    }
